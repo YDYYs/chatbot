@@ -1,8 +1,8 @@
 /*
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-07-09 10:15:18
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-07-13 15:21:42
+ * @LastEditors: cheng 1797187146@qq.com
+ * @LastEditTime: 2022-07-16 10:54:24
  * @FilePath: \静态页面\js\reg.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -52,6 +52,6 @@ form.onsubmit = async function (e) {
   const r = await API.reg(data);
   if (r.code === 0) {
     alert("注册成功");
-    location.href = "../login.html";
+    location.href = base + "/login.html";
   }
 };

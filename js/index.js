@@ -4,10 +4,9 @@
   const user = resp.data;
   if (!user) {
     alert("未登录或登录已过期，请重新登录");
-    location.href = "../login.html";
+    location.href = base + "/login.html";
     return;
   }
-  //   console.log(user);
 
   const dom = {
     name: document.querySelector(".aside-name"),

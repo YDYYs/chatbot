@@ -26,7 +26,7 @@
   //注销
   dom.btn.onclick = function () {
     API.loginOut();
-    location.href = "../login.html";
+    location.href = base + "login.html";
   };
 
   //内容
